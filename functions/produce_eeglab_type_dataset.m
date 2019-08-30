@@ -14,7 +14,7 @@ EEG = pop_select( EEG,'channel',CFG.data_channels);
 EEG = eeg_checkset( EEG );
 EEG = pop_editset(EEG, 'chanlocs', CFG.channel_location_file);
 EEG = eeg_checkset( EEG );
-output_folder = [CFG.output_folder, '\eeg_type_datasets\'];
+output_folder = [CFG.output_folder, '\eeglab_type_datasets\'];
 if ~exist(output_folder, 'dir')
     mkdir(output_folder)
 end
